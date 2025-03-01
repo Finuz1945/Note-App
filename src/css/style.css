@@ -1,0 +1,87 @@
+body {
+  background-color: #8ea3a6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nameApp {
+  text-align: center;
+  font-size: x-large;
+  color: #22177a;
+}
+
+#noteForm {
+  display: flex;
+  flex-direction: column;
+  background-color: #e6e9af;
+  padding: 4px 8px;
+  border-radius: 0.5rem;
+  border: 1px solid #333;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-size: large;
+  color: #22177a;
+  margin-top: 0.5rem;
+}
+
+input {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.submit {
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  background-color: #605ea1;
+  color: aliceblue;
+}
+.submit:hover {
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  background-color: #6563a1;
+  color: rgb(221, 228, 234);
+  cursor: pointer;
+}
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.list > * {
+  padding: 4px 8px;
+  color: #22177a;
+  background-color: #e6e9af;
+  border-radius: 0.5rem;
+  border: 1px solid #333;
+}
+#loader {
+  display: none;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  color: cadetblue;
+}
+@media (max-width: 480px) {
+  .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
