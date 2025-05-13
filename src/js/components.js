@@ -95,7 +95,7 @@ const createNoteItemElement = ({ id, title, body, createdAt }) => `
       <h3>${title}</h3>
       <p>${body}</p>
       <small>Tanggal dibuat: ${formattedDate(createdAt)}</small>
-      <button class="submit" data-id="${id}">Hapus</button>
+      <button class="delete-button" data-id="${id}">Hapus</button>
     </div>
   `;
 

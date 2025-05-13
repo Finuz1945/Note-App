@@ -18,7 +18,7 @@ bodyInput.addEventListener("input", () => {
 });
 
 usersListElementForServer.addEventListener("click", async (event) => {
-  if (event.target.classList.contains("submit")) {
+  if (event.target.classList.contains("delete-button")) {
     const noteId = event.target.getAttribute("data-id");
 
     const confirmation = await Swal.fire({
@@ -31,7 +31,7 @@ usersListElementForServer.addEventListener("click", async (event) => {
     });
 
     if (confirmation.isConfirmed) {
-      deleteNoteById(noteId);
+      await deleteNoteById(noteId);
     }
   }
 });

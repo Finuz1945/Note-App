@@ -50,6 +50,19 @@ textarea {
   color: rgb(221, 228, 234);
   cursor: pointer;
 }
+.delete-button {
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  background-color: #605ea1;
+  color: aliceblue;
+}
+.delete-button:hover {
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  background-color: #6563a1;
+  color: rgb(221, 228, 234);
+  cursor: pointer;
+}
 .list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -83,5 +96,19 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+  .delete-button {
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: #605ea1;
+    color: aliceblue;
+  }
+  .delete-button:hover {
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    background-color: #6563a1;
+    color: rgb(221, 228, 234);
+    cursor: pointer;
   }
 }
